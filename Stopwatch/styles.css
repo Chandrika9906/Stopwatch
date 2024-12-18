@@ -1,0 +1,81 @@
+:root {
+    --background-light: #f9f9f9;
+    --text-light: #333;
+    --button-light: #007bff;
+    --background-dark: #1e1e1e;
+    --text-dark: #f1f1f1;
+    --button-dark: #ffa500;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    --background-light: #1e1e1e;
+    --text-light: #f1f1f1;
+    --button-light: #ffa500;
+}
+
+.stopwatch-container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#display {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--button-light);
+    transition: background-color 0.3s;
+}
+
+.dark-mode .buttons button {
+    background-color: var(--button-dark);
+}
+
+#laps-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+#laps-list li {
+    background: #e9ecef;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.dark-mode #laps-list li {
+    background: #444;
+}
