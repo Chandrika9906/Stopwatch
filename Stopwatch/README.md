@@ -132,6 +132,8 @@ function startTimer() {
 - 📱 Mobile optimization
 - 🔔 Sound notifications
 - 💾 Save lap history
+- 🏁 Lap button to record the current stopwatch time
+
 
 ---
 
